@@ -239,6 +239,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
      * with double precision support (64-bit). */
     //////////////////////////////////////////////////////////////////////////
 
+#define ASSIMP_DOUBLE_PRECISION 1
+
 #ifdef ASSIMP_DOUBLE_PRECISION
     typedef double ai_real;
     typedef signed long long int ai_int;

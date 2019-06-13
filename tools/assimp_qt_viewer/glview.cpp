@@ -449,6 +449,9 @@ void CGLView::Draw_Node(const aiNode* pNode) {
 	// Apply node transformation matrix.
 	mat_node.Transpose();
 	glPushMatrix();
+    
+#define ASSIMP_DOUBLE_PRECISION 1
+    
 #ifdef ASSIMP_DOUBLE_PRECISION
 	glMultMatrixd((GLdouble*)mat_node[0]);
 #else

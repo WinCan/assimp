@@ -690,7 +690,7 @@ void DXFImporter::ParsePolyLine(DXF::LineReader& reader, DXF::FileData& output) 
             line.indices.push_back(static_cast<unsigned int>(line.positions.size()-1));
             line.indices.push_back(0);
             line.counts.push_back(2);
-        }
+        } 
     }
 }
 
@@ -707,7 +707,7 @@ void DXFImporter::ParsePolyLineVertex(DXF::LineReader& reader, DXF::PolyLine& li
 
     while( !reader.End() ) {
 
-        if (reader.Is(0)) { // SEQEND or another VERTEX
+        if (reader.Is(0)) { // SEQEND or another VERTEX   
             break;
         }
 
